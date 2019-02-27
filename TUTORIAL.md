@@ -327,7 +327,7 @@ In `index.html`, add the following right after the comic, still inside the div w
     <p><i>#{{current.num}}, drawn on {{current.day}} {{month}} {{current.year}}</i></p>
       <h3>Add a Comment</h3>
       <form v-on:submit.prevent="addComment">
-        <input v-model="addedName" placeholder="Name"></p>
+        <input v-model="addedName" placeholder="Name">
         <textarea v-model="addedComment"></textarea>
         <br />
         <button type="submit">Comment</button>
